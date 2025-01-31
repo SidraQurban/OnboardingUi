@@ -2,10 +2,11 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react';
 import Lottie from "lottie-react-native"
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
+import { useNavigation } from '@react-navigation/native';
 
 
 const HomeScreen = () => {
-  
+  const navigation = useNavigation();
   return (
     <View>
       <Lottie
@@ -18,7 +19,7 @@ const HomeScreen = () => {
         loop
       />
       <TouchableOpacity 
-      onPress={() => navigation.navigate("OnboardingScreen")}
+      onPress={() => navigation.navigate("Onboarding")}
         style={{
           backgroundColor: "green",
           height: responsiveHeight(6),
