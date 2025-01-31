@@ -37,6 +37,7 @@ const OnboardingScreen = () => {
       onDone={handleDone}
       onSkip={handleDone} 
       DoneButtonComponent={doneButton}  
+      bottomBarHighlight={false} 
         containerStyles={{ paddingHorizontal: responsiveWidth(1) }}
         pages={[
           {
