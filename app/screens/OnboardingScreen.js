@@ -12,9 +12,23 @@ const OnboardingScreen = () => {
         navigation.navigate("Home");
     }
     const  doneButton = ({...props}) => {
-        <TouchableOpacity>
-  
-        </TouchableOpacity>
+       return (
+         <TouchableOpacity {...props}>
+           <Text
+             style={{
+               backgroundColor: "white",
+               padding: responsiveHeight(1.9),
+               borderTopLeftRadius:responsiveHeight(2.8),
+               borderBottomLeftRadius:responsiveHeight(2.8),
+               color: "black",
+               fontSize:responsiveFontSize(2),
+               fontWeight: "bold",              
+             }}
+           >
+             Done
+           </Text>
+         </TouchableOpacity>
+       );
 
     }
   return (
