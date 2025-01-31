@@ -2,70 +2,147 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import Onboarding from 'react-native-onboarding-swiper';
 import Lottie from "lottie-react-native"
-import { responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
+import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 
 const OnboardingScreen = () => {
   return (
-    <Onboarding
-      pages={[
-        {
-          backgroundColor: "#fff",
-          image: (
-            <View>
-              <Lottie
-                source={require("../../assets/Animation - 1738225211789.json")}
+    <View style={{ flex: 1, backgroundColor: "#fff" }}>
+      <Onboarding
+        containerStyles={{ paddingHorizontal: responsiveWidth(1) }}
+        pages={[
+          {
+            backgroundColor: "#c7f9cc",
+            image: (
+              <View>
+                <Lottie
+                  source={require("../../assets/Animation - 1738226534865.json")}
+                  style={{
+                    height: responsiveHeight(55),
+                    width: responsiveWidth(110),
+                  }}
+                  autoPlay
+                  loop
+                />
+              </View>
+            ),
+            title: (
+              <View>
+                <Text
+                  style={{
+                    fontSize: responsiveFontSize(2.8),
+                    fontWeight: "bold",
+                    marginTop: responsiveHeight(-17),
+                  }}
+                >
+                  Multi-channel Payment
+                </Text>
+              </View>
+            ),
+            subtitle: (
+              <Text
                 style={{
-                  height: responsiveHeight(50),
-                  width: responsiveWidth(70),
+                  fontSize: responsiveFontSize(2.1),
+
+                  marginTop: responsiveHeight(-11),
+                  color: "gray",
+                  paddingHorizontal: responsiveWidth(7),
                 }}
-                autoPlay
-                loop
-              />
-            </View>
-          ),
-          title: "Track Your Crypto",
-          subtitle:
-            "Track and buy cryptocurrencies at real value,tarde with easeand confidence in one safe and fast application",
-        },
-        {
-          backgroundColor: "#fff",
-          image: (
-            <View>
-              <Lottie
-                source={require("../../assets/Animation - 1738225211789.json")}
+              >
+                Allows you to pay online at all applications and websites that
+                accept MasterCard cards.
+              </Text>
+            ),
+          },
+          {
+            backgroundColor: "#ff9ebb",
+            image: (
+              <View>
+                <Lottie
+                  source={require("../../assets/Animation - 1738227390541.json")}
+                  style={{
+                    height: responsiveHeight(55),
+                    width: responsiveWidth(110),
+                  }}
+                  autoPlay
+                  loop
+                />
+              </View>
+            ),
+            title: (
+              <View>
+                <Text
+                  style={{
+                    fontSize: responsiveFontSize(2.8),
+                    fontWeight: "bold",
+                    marginTop: responsiveHeight(-17),
+                  }}
+                >
+                  All Free
+                </Text>
+              </View>
+            ),
+            subtitle: (
+              <Text
                 style={{
-                  height: responsiveHeight(50),
-                  width: responsiveWidth(70),
+                  fontSize: responsiveFontSize(2.1),
+
+                  marginTop: responsiveHeight(-11),
+                  color: "gray",
+                  paddingHorizontal: responsiveWidth(7),
                 }}
-                autoPlay
-                loop
-              />
-            </View>
-          ),
-          title: "Explore Best Coins",
-          subtitle:
-            "All cryptos go through a rigorous evaluation process and are compared to thousands of other crypto projects",
-        },
-        {
-          backgroundColor: "#fff",
-          image: (
-            <View>
-              <Lottie
-                source={require("../../assets/Animation - 1738225211789.json")}
+              >
+                Deposits and payments are completely free. No insurance fee,
+                annual fee
+              </Text>
+            ),
+          },
+          {
+            backgroundColor: "#fedc97",
+            image: (
+              <View>
+                <Lottie
+                  source={require("../../assets/Animation - 1738227535839.json")}
+                  style={{
+                    height: responsiveHeight(55),
+                    width: responsiveWidth(110),
+                    marginLeft:responsiveWidth(10)
+                  }}
+                  autoPlay
+                  loop
+                />
+              </View>
+            ),
+            title: (
+              <View>
+                <Text
+                  style={{
+                    fontSize: responsiveFontSize(2.8),
+                    fontWeight: "bold",
+                    marginTop: responsiveHeight(-17),
+                  }}
+                >
+                  Security
+                </Text>
+              </View>
+            ),
+            subtitle: (
+              <Text
                 style={{
-                  height: responsiveHeight(50),
-                  width: responsiveWidth(70),
+                  fontSize: responsiveFontSize(2.1),
+
+                  marginTop: responsiveHeight(-11),
+                  color: "gray",
+                  paddingHorizontal: responsiveWidth(7),
                 }}
-                autoPlay
-                loop
-              />
-            </View>
-          ),
-          title: "Onboarding",
-          subtitle: "Done with React Native Onboarding Swiper",
-        },
-      ]}
-    />
+              >
+                Two-Factor Authentication; OTP Authentication and MSC security
+                code.
+              </Text>
+            ),
+          },
+        ]}
+      />
+    </View>
   );
 }
 
