@@ -3,8 +3,14 @@ import React from 'react';
 import Onboarding from 'react-native-onboarding-swiper';
 import Lottie from "lottie-react-native"
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
+import { useNavigation } from '@react-navigation/native';
 
 const OnboardingScreen = () => {
+    const navigation = useNavigation();
+    const handleDone = () => {
+        // Navigate to the home screen
+        navigation.navigate("HomeScreen");
+    }
   return (
     <View style={{ flex: 1, backgroundColor: "#fff" }}>
       <Onboarding
@@ -105,7 +111,7 @@ const OnboardingScreen = () => {
                   style={{
                     height: responsiveHeight(55),
                     width: responsiveWidth(110),
-                    marginLeft:responsiveWidth(10)
+                    marginLeft: responsiveWidth(10),
                   }}
                   autoPlay
                   loop
