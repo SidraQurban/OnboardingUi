@@ -6,9 +6,17 @@ import Lottie from "lottie-react-native"
 const HomeScreen = () => {
   return (
     <View>
-      <Text>HomeScreen</Text>
+      <Lottie
+        source={require("../../assets/Animation - 1738226534865.json")}
+        style={{
+          height: responsiveHeight(55),
+          width: responsiveWidth(110),
+        }}
+        autoPlay
+        loop
+      />
     </View>
-  )
+  );
 }
 
 export default HomeScreen
