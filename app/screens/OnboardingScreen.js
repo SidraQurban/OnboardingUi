@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 import Onboarding from 'react-native-onboarding-swiper';
 import Lottie from "lottie-react-native"
@@ -9,11 +9,20 @@ const OnboardingScreen = () => {
     const navigation = useNavigation();
     const handleDone = () => {
         // Navigate to the home screen
-        navigation.navigate("HomeScreen");
+        navigation.navigate("Home");
+    }
+    const  doneButton = ({...props}) => {
+        <TouchableOpacity>
+  
+        </TouchableOpacity>
+
     }
   return (
     <View style={{ flex: 1, backgroundColor: "#fff" }}>
       <Onboarding
+      onDone={handleDone}
+      onSkip={handleDone} 
+      DoneButtonComponent={doneButton}  
         containerStyles={{ paddingHorizontal: responsiveWidth(1) }}
         pages={[
           {
