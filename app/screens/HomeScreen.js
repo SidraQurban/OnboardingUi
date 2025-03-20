@@ -37,7 +37,7 @@ const HomeScreen = () => {
             marginTop:responsiveHeight(1)
           }}
         >
-          ResetDo
+          ResetDone
         </Text>
       </TouchableOpacity>
 
