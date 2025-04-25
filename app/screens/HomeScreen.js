@@ -49,7 +49,7 @@ const HomeScreen = () => {
           height: responsiveHeight(6),
           width: responsiveHeight(15),
           marginTop: responsiveHeight(-32),
-          alignSelf: "center",
+       
  
        
 
