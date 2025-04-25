@@ -45,7 +45,7 @@ const HomeScreen = () => {
       <TouchableOpacity
         onPress={() => navigation.navigate("Onboarding")}
         style={{
-          backgroundColor: "green",
+          
  
        
 
