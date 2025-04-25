@@ -48,7 +48,6 @@ const HomeScreen = () => {
           backgroundColor: "green",
           height: responsiveHeight(6),
           width: responsiveHeight(15),
-        
  
        
 
