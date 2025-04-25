@@ -46,7 +46,6 @@ const HomeScreen = () => {
         onPress={() => navigation.navigate("Onboarding")}
         style={{
           backgroundColor: "green",
-          
  
        
 
