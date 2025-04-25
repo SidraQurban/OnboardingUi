@@ -46,8 +46,7 @@ const HomeScreen = () => {
         onPress={() => navigation.navigate("Onboarding")}
         style={{
           backgroundColor: "green",
-          height: responsiveHeight(6),
-
+          
  
        
 
