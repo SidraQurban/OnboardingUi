@@ -44,7 +44,7 @@ const HomeScreen = () => {
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => navigation.navigate("Onboarding")}
-        style={{
+      
  
        
 
