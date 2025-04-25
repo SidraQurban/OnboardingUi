@@ -50,7 +50,7 @@ const HomeScreen = () => {
           width: responsiveHeight(15),
           marginTop: responsiveHeight(-32),
           alignSelf: "center",
-          borderRadius: responsiveHeight(8),
+ 
        
 
     </View>
