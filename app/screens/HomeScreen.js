@@ -40,8 +40,9 @@ const HomeScreen = () => {
         Reset
         </Text>
 
-        
+
       </TouchableOpacity>
+      <TouchableOpacity
 
     </View>
 
