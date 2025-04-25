@@ -43,6 +43,15 @@ const HomeScreen = () => {
 
       </TouchableOpacity>
       <TouchableOpacity
+        onPress={() => navigation.navigate("Onboarding")}
+        style={{
+          backgroundColor: "green",
+          height: responsiveHeight(6),
+          width: responsiveHeight(15),
+          marginTop: responsiveHeight(-32),
+          alignSelf: "center",
+          borderRadius: responsiveHeight(8),
+        }}
 
     </View>
 
