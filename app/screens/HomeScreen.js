@@ -39,8 +39,7 @@ const HomeScreen = () => {
         >
         Reset
         </Text>
-      </TouchableOpacity>
-
+      </TouchableOpacity>d
     </View>
   );
 }
