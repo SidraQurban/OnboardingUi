@@ -18,6 +18,7 @@ const HomeScreen = () => {
         autoPlay
         loop
       />
+      
       <TouchableOpacity 
       onPress={() => navigation.navigate("Onboarding")}
         style={{
