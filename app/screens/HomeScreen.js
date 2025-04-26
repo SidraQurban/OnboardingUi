@@ -4,6 +4,7 @@ import Lottie from "lottie-react-native"
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 import { useNavigation } from '@react-navigation/native';
 
+
 const HomeScreen = () => {
   const navigation = useNavigation();
   return (
