@@ -42,7 +42,6 @@ const HomeScreen = () => {
         </Text>
       </TouchableOpacity>
     </View>
-
   );
 }
 
