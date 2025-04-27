@@ -37,7 +37,7 @@ const HomeScreen = () => {
             fontWeight: "bold",
             marginTop:responsiveHeight(1)
           }}
-        > 
+        >
         Reset
         </Text>
       </TouchableOpacity>
