@@ -43,6 +43,7 @@ const HomeScreen = () => {
       </TouchableOpacity>
     </View>
   );
+  
 }
 
 export default HomeScreen
