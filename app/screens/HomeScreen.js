@@ -38,7 +38,7 @@ const HomeScreen = () => {
             marginTop:responsiveHeight(1)
           }}
         >
-          Sta
+          St
 
         Reset
         </Text>
