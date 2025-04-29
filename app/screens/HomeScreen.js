@@ -40,7 +40,6 @@ const HomeScreen = () => {
         >
           Start
 
-
         Reset
         </Text>
       </TouchableOpacity>
