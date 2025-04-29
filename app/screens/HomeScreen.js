@@ -39,7 +39,7 @@ const HomeScreen = () => {
           }}
         >
           Start
-        
+    
 
         Reset
         </Text>
