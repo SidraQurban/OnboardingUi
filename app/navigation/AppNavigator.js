@@ -6,6 +6,7 @@ import HomeScreen from "../screens/HomeScreen";
 import OnboardingScreen from "../screens/OnboardingScreen";
 
 const Stack = createNativeStackNavigator();
+
 const AppNavigator = () => {
   return (
     <NavigationContainer>
