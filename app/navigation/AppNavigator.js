@@ -17,4 +17,4 @@ const AppNavigator = () => {
   );
 };
 export default AppNavigator;
-expo;
+exp;
