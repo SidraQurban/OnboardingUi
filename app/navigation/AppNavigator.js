@@ -16,5 +16,5 @@ const AppNavigator = () => {
     </NavigationContainer>
   );
 };
-con;
+co;
 export default AppNavigator;
