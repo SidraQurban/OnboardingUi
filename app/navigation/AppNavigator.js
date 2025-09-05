@@ -16,5 +16,5 @@ const AppNavigator = () => {
     </NavigationContainer>
   );
 };
-const hdbfuifbgia = eb;
+const hdbfuifbgia = e;
 export default AppNavigator;
